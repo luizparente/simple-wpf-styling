@@ -1,0 +1,82 @@
+﻿<Window x:Class="SimpleWpfStyling.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:gui="clr-namespace:Design.WPF;assembly=Design.WPF"
+        mc:Ignorable="d"
+        Title="Simple WPF Styling"
+		Style="{StaticResource GenericWindowStyle}"
+		Background="{gui:ThemeResource ResourceKey=ContentBackground}">
+	<StackPanel Margin="10">
+		<GroupBox Header="Some Header" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}">
+			<StackPanel>
+				<Label Content="Something" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+				<TextBox/>
+
+				<Label Content="Something" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+				<TextBox/>
+			</StackPanel>
+		</GroupBox>
+
+		<GroupBox Header="Some Header" Margin="0 10 0 0" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}">
+			<StackPanel>
+				<Label Content="Something" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+				<ComboBox>
+					<ComboBoxItem Content="Option 1"/>
+					<ComboBoxItem Content="Option 2"/>
+					<ComboBoxItem Content="Option 3"/>
+				</ComboBox>
+
+				<Grid Margin="0 10 0 0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+
+					<StackPanel Grid.Column="0">
+						<CheckBox Content="Check me" Margin="0 0 10 0" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+						<CheckBox Content="Check me" Margin="0 0 10 0" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+						<CheckBox Content="Check me" Margin="0 0 10 0" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+						<CheckBox Content="Check me" Margin="0 0 10 0" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+					</StackPanel>
+
+					<StackPanel Grid.Column="1">
+						<RadioButton Content="Option 1" GroupName="Options" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+						<RadioButton Content="Option 2" GroupName="Options" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+						<RadioButton Content="Option 3" GroupName="Options" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+						<RadioButton Content="Option 4" GroupName="Options" Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+					</StackPanel>
+				</Grid>
+			</StackPanel>
+		</GroupBox>
+
+		<StackPanel Margin="0 10 0 0">
+			<ListView Background="{gui:ThemeResource ResourceKey=ContentBackground}"
+					  Foreground="{gui:ThemeResource ResourceKey=ContentForeground}">
+				<ListViewItem Content="Item 1"/>
+				<ListViewItem Content="Item 2"/>
+				<ListViewItem Content="Item 3"/>
+				<ListViewItem Content="Item 4"/>
+				<ListViewItem Content="Item 5"/>
+			</ListView>
+		</StackPanel>
+
+		<Button Content="Some Button" 
+				Margin="0 10 0 10"
+				BorderBrush="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+		<Button Content="Another Button" 
+				Margin="0 0 0 10"
+				BorderBrush="{gui:ThemeResource ResourceKey=ContentForeground}"/>
+		<Button Name="btnSwitchTheme" 
+				Content="Switch to Dark Theme" 
+				Margin="0 0 0 10" 
+				BorderBrush="{gui:ThemeResource ResourceKey=ContentForeground}"
+				Click="OnSwitchTheme"/>
+
+		<Label Content="Copyright Luiz Parente, 2022" 
+               Grid.Row="1"
+			   Margin="0 10 0 0"
+               Foreground="Gray"/>
+	</StackPanel>
+</Window>

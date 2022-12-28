@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns:gui="clr-namespace:Design.WPF">
+	<ResourceDictionary.MergedDictionaries>
+		<gui:ThemeResourceDictionary/>
+		<ResourceDictionary Source="Styles/Common/ButtonStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Common/CheckboxStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Common/GenericWindowStyles.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
