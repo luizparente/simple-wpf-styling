@@ -8,7 +8,7 @@
 	</Style>
 	<Style BasedOn="{StaticResource ButtonStyle}" TargetType="{x:Type Button}"/>-->
 
-	<!--But a full style for a control can be extracted using Blend (Objects and Timeline, Edit template).-->
+	<!--But the full style for a control can be extracted using Blend (Objects and Timeline, Edit template).-->
 	<Style x:Key="FocusVisual">
 		<Setter Property="Control.Template">
 			<Setter.Value>

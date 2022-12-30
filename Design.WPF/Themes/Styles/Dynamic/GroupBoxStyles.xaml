@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:theme="clr-namespace:Design.WPF">
+	<Style x:Key="GroupBoxStyle" TargetType="{x:Type GroupBox}">
+		<Setter Property="Foreground" Value="{theme:ThemeResource ResourceKey=ContentForeground}"/>
+	</Style>
+	<Style BasedOn="{StaticResource GroupBoxStyle}" TargetType="{x:Type GroupBox}"/>
+</ResourceDictionary>

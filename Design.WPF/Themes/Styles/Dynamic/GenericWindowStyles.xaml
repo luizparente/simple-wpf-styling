@@ -1,14 +1,16 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:theme="clr-namespace:Design.WPF">
 	<!--Windows are a bit trickier to standardize, because "x:Type Window" does not
 	target MainWindow, since these are not the same type.
 	That said, styling by window category can be a viable solution. This requires
-	property Window.Style to be initialized at Window instance level.-->
+	property Window.Style to be initialized by the Window instance itself.-->
 	<Style x:Key="GenericWindowStyle" TargetType="{x:Type Window}">
 		<Setter Property="SnapsToDevicePixels" Value="true" />
 		<Setter Property="Width" Value="500"/>
 		<Setter Property="Height" Value="575"/>
 		<Setter Property="ResizeMode" Value="CanMinimize" />
+		<Setter Property="Background" Value="{theme:ThemeResource ResourceKey=ContentBackground}"/>
 
 		<!--Static Window styling example:-->
 		<!--<Setter Property="Template">

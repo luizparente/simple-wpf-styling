@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:theme="clr-namespace:Design.WPF">
+	<Style x:Key="ListViewStyle" TargetType="{x:Type ListView}">
+		<Setter Property="Background" Value="{theme:ThemeResource ResourceKey=ContentBackgroundAccent}"/>
+		<Setter Property="Foreground" Value="{theme:ThemeResource ResourceKey=ContentForegroundAccent}"/>
+	</Style>
+	<Style BasedOn="{StaticResource ListViewStyle}" TargetType="{x:Type ListView}"/>
+</ResourceDictionary>

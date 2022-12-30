@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns:gui="clr-namespace:Design.WPF">
+	<ResourceDictionary.MergedDictionaries>
+		<gui:ThemeResourceDictionary/>
+		<ResourceDictionary Source="Styles/Static/ButtonStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Dynamic/GenericWindowStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Dynamic/ListViewStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Dynamic/TextBoxStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Dynamic/LabelStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Dynamic/ComboBoxStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Dynamic/GroupBoxStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Dynamic/CheckBoxStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Dynamic/RadioButtonStyles.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
