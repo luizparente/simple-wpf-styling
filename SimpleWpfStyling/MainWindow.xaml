@@ -52,8 +52,7 @@
 		</GroupBox>
 
 		<StackPanel Margin="0 10 0 0">
-			<ListView Background="{gui:ThemeResource ResourceKey=ContentBackground}"
-					  Foreground="{gui:ThemeResource ResourceKey=ContentForeground}">
+			<ListView>
 				<ListViewItem Content="Item 1"/>
 				<ListViewItem Content="Item 2"/>
 				<ListViewItem Content="Item 3"/>
@@ -77,6 +76,6 @@
 		<Label Content="Copyright Luiz Parente, 2022" 
                Grid.Row="1"
 			   Margin="0 10 0 0"
-               Foreground="Gray"/>
+               Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"/>
 	</StackPanel>
 </Window>

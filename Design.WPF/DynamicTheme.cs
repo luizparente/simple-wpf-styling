@@ -25,18 +25,43 @@ namespace Design.WPF {
 
 			switch (type) {
 				case ThemeType.Default:
-					SetResource(ThemeResourceKey.ContentBackground.ToString(),
-								new SolidColorBrush(ColorFromHex("#CCCCCC")));
-					SetResource(ThemeResourceKey.ContentForeground.ToString(),
-								new SolidColorBrush(ColorFromHex("#1F1F1F")));
+					SetDefaultThemeStyles();
 					break;
 				case ThemeType.Dark:
-					SetResource(ThemeResourceKey.ContentBackground.ToString(),
-								new SolidColorBrush(ColorFromHex("#1F1F1F")));
-					SetResource(ThemeResourceKey.ContentForeground.ToString(),
-								new SolidColorBrush(ColorFromHex("#FAFAFA")));
+					SetDarkThemeStyles();
 					break;
 			}
+
+			SetCommonResources();
+		}
+
+		private static void SetDefaultThemeStyles() {
+			SetResource(ThemeResourceKey.ContentBackground.ToString(),
+						new SolidColorBrush(ColorFromHex("#A5A692")));
+			SetResource(ThemeResourceKey.ContentForeground.ToString(),
+						new SolidColorBrush(ColorFromHex("#011F26")));
+		}
+
+		private static void SetDarkThemeStyles() {
+			SetResource(ThemeResourceKey.ContentBackground.ToString(),
+						new SolidColorBrush(ColorFromHex("#011F26")));
+			SetResource(ThemeResourceKey.ContentForeground.ToString(),
+						new SolidColorBrush(ColorFromHex("#FAFAFA")));
+		}
+
+		private static void SetCommonResources() {
+			SetResource(ThemeResourceKey.PrimaryAccent.ToString(),
+						new SolidColorBrush(ColorFromHex("#025E73")));
+			SetResource(ThemeResourceKey.PrimaryAccentLighter.ToString(),
+						new SolidColorBrush(ColorFromHex("#03a5c9")));
+			SetResource(ThemeResourceKey.PrimaryAccentContrast.ToString(),
+						new SolidColorBrush(ColorFromHex("#FAFAFA")));
+			SetResource(ThemeResourceKey.SecondaryAccent.ToString(),
+						new SolidColorBrush(ColorFromHex("#F2A71B"))); 
+			SetResource(ThemeResourceKey.SecondaryAccentLighter.ToString(),
+						new SolidColorBrush(ColorFromHex("#f6be55")));
+			SetResource(ThemeResourceKey.SecondaryAccentContrast.ToString(),
+						new SolidColorBrush(ColorFromHex("#011F26")));
 		}
 
 		public static object? GetResource(ThemeResourceKey key) {
