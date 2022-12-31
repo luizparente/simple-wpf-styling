@@ -76,8 +76,8 @@ namespace Design.WPF {
 							StartPoint = new Point(0, 0.5),
 							EndPoint = new Point(0.5, 0.5),
 							GradientStops = new GradientStopCollection() {
-								new GradientStop() { Offset = 0, Color = GetColorFromHex("#FF833AB4") },
-								new GradientStop() { Offset = 1, Color = GetColorFromHex("#FFFD1D1D") }
+								new GradientStop() { Offset = 0, Color = GetColorFromHex("#025E73") },
+								new GradientStop() { Offset = 1, Color = GetColorFromHex("#03a5c9") }
 							}
 						});
 		}

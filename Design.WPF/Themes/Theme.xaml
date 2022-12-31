@@ -3,6 +3,7 @@
 	<ResourceDictionary.MergedDictionaries>
 		<gui:ThemeResourceDictionary/>
 		<ResourceDictionary Source="Styles/Static/ButtonStyles.xaml"/>
+		<ResourceDictionary Source="Styles/Dynamic/WindowButtonStyles.xaml"/>
 		<ResourceDictionary Source="Styles/Dynamic/GenericWindowStyles.xaml"/>
 		<ResourceDictionary Source="Styles/Dynamic/ListViewStyles.xaml"/>
 		<ResourceDictionary Source="Styles/Dynamic/TextBoxStyles.xaml"/>

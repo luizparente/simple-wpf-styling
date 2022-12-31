@@ -10,19 +10,5 @@ namespace SimpleWpfStyling {
 		public MainWindow() {
 			InitializeComponent();
 		}
-
-		public void OnSwitchTheme(object sender, EventArgs e) {
-			var theme = DynamicTheme.ThemeType == ThemeType.Default ?
-						ThemeType.Dark : ThemeType.Default;
-
-			if (theme == ThemeType.Dark) {
-				this.btnSwitchTheme.Content = "Switch to Default Theme";
-			}
-			else {
-				this.btnSwitchTheme.Content = "Switch to Dark Theme";
-			}
-
-			DynamicTheme.LoadThemeType(theme);
-		}
 	}
 }
