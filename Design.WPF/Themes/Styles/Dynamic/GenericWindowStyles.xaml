@@ -9,7 +9,7 @@
 	<Style x:Key="GenericWindowStyle" TargetType="{x:Type Window}">
 		<Setter Property="SnapsToDevicePixels" Value="true" />
 		<Setter Property="Width" Value="500"/>
-		<Setter Property="Height" Value="530"/>
+		<Setter Property="Height" Value="550"/>
 		<Setter Property="ResizeMode" Value="CanMinimize"/>
 
 		<!--If no templating is required, the line below suffices for background setting.-->
