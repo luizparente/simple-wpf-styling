@@ -1,0 +1,52 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:theme="clr-namespace:Design.WPF.Controls">
+	<ControlTemplate x:Key="Icon_Close" TargetType="{x:Type theme:XamlImage}">
+		<Viewbox>
+			<Canvas Width="12"
+					Height="20"
+					SnapsToDevicePixels="False"
+					UseLayoutRounding="False">
+				<!--The data below can be easily obtained by opening a .svg file in Visual Studio.-->
+				<Path Data="M11.383 13.644A1.03 1.03 0 0 1 9.928 15.1L6 11.172 2.072 15.1a1.03 1.03 0 1 1-1.455-1.456l3.928-3.928L.617 5.79a1.03 1.03 0 1 1 1.455-1.456L6 8.261l3.928-3.928a1.03 1.03 0 0 1 1.455 1.456L7.455 9.716z" 
+					  Fill="{TemplateBinding Foreground}"/>
+			</Canvas>
+		</Viewbox>
+	</ControlTemplate>
+
+	<ControlTemplate x:Key="Icon_Minimize" TargetType="{x:Type theme:XamlImage}">
+		<Viewbox>
+			<Canvas Width="24"
+					Height="16"
+					SnapsToDevicePixels="False"
+					UseLayoutRounding="False">
+				<Path Data="M6 11H18V13H6V11Z" 
+					  Fill="{TemplateBinding Foreground}"/>
+			</Canvas>
+		</Viewbox>
+	</ControlTemplate>
+
+	<ControlTemplate x:Key="Icon_Maximize" TargetType="{x:Type theme:XamlImage}">
+		<Viewbox>
+			<Canvas Width="24"
+					Height="24"
+					SnapsToDevicePixels="False"
+					UseLayoutRounding="False">
+				<Path Data="M10.71,14.71,5.41,20H10a1,1,0,0,1,0,2H4a2,2,0,0,1-2-2V14a1,1,0,0,1,2,0v4.59l5.29-5.3a1,1,0,0,1,1.42,1.42ZM20,2H14a1,1,0,0,0,0,2h4.59l-5.3,5.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L20,5.41V10a1,1,0,0,0,2,0V4A2,2,0,0,0,20,2Z" 
+					  Fill="{TemplateBinding Foreground}"/>
+			</Canvas>
+		</Viewbox>
+	</ControlTemplate>
+
+	<ControlTemplate x:Key="Icon_Theme" TargetType="{x:Type theme:XamlImage}">
+		<Viewbox>
+			<Canvas Width="24"
+					Height="24"
+					SnapsToDevicePixels="False"
+					UseLayoutRounding="False">
+				<Path Data="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,20.5 L12,3.5 C16.6944204,3.5 20.5,7.30557963 20.5,12 C20.5,16.6944204 16.6944204,20.5 12,20.5 Z" 
+					  Fill="{TemplateBinding Foreground}"/>
+			</Canvas>
+		</Viewbox>
+	</ControlTemplate>
+</ResourceDictionary>

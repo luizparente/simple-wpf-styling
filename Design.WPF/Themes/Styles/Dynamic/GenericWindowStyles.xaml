@@ -1,7 +1,8 @@
 ﻿<ResourceDictionary x:Class="Design.WPF.Themes.Styles.Dynamic.GenericWindowStyles"
 					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-					xmlns:theme="clr-namespace:Design.WPF">
+					xmlns:theme="clr-namespace:Design.WPF"
+					xmlns:icons="clr-namespace:Design.WPF.Controls">
 	<!--Windows are a bit trickier to standardize, because "x:Type Window" does not
 	target MainWindow, since these are not the same type.
 	That said, styling by window category can be a viable solution. This requires
@@ -38,27 +39,31 @@
 
 									<Button Click="OnClose"
 											WindowChrome.IsHitTestVisibleInChrome="True"
-											Content="X"
 											DockPanel.Dock="Right"
-											Style="{DynamicResource WindowButtonStyle}"/>
+											Style="{DynamicResource WindowButtonStyle}">
+										<icons:XamlImage Template="{DynamicResource Icon_Close}"/>
+									</Button>
 
 									<Button Click="OnMaximize"
 											WindowChrome.IsHitTestVisibleInChrome="True"
-											Content="M"
 											DockPanel.Dock="Right"
-											Style="{DynamicResource WindowButtonStyle}"/>
+											Style="{DynamicResource WindowButtonStyle}">
+										<icons:XamlImage Template="{DynamicResource Icon_Maximize}"/>
+									</Button>
 
 									<Button Click="OnMinimize"
 											WindowChrome.IsHitTestVisibleInChrome="True"
-											Content="m"
 											DockPanel.Dock="Right"
-											Style="{DynamicResource WindowButtonStyle}"/>
-									
+											Style="{DynamicResource WindowButtonStyle}">
+										<icons:XamlImage Template="{DynamicResource Icon_Minimize}"/>
+									</Button>
+
 									<Button Click="OnSwitchThemes"
 											WindowChrome.IsHitTestVisibleInChrome="True"
-											Content="D"
 											DockPanel.Dock="Right"
-											Style="{DynamicResource WindowButtonStyle}"/>
+											Style="{DynamicResource WindowButtonStyle}">
+										<icons:XamlImage Template="{DynamicResource Icon_Theme}"/>
+									</Button>
 								</DockPanel>
 							</Grid>
 
@@ -78,6 +83,9 @@
 									<Setter TargetName="WindowResizeGrip" Property="Visibility" Value="Visible" />
 								</Trigger>
 							</ControlTemplate.Triggers>-->
+
+
+							<!--<icons:XamlImage Template="{DynamicResource Icon_Close}"/>-->
 						</Grid>
 					</Border>
 				</ControlTemplate>

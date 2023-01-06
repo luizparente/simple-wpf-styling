@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:theme="clr-namespace:Design.WPF;assembly=Design.WPF"
+		xmlns:icons="clr-namespace:Design.WPF.Controls;assembly=Design.WPF"
         mc:Ignorable="d"
         Title="Simple WPF Styling"
 		Style="{StaticResource GenericWindowStyle}">
